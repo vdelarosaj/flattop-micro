@@ -1,0 +1,3 @@
+[submodule "openflexure-microscope"]
+	path = openflexure-microscope
+	url = https://gitlab.com/openflexure/openflexure-microscope.git
