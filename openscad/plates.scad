@@ -14,9 +14,15 @@ use <../openflexure-microscope/openscad/utilities.scad>;
 include <parameters.scad>;
 use <focusing_assembly.scad>;
 
+$fn=64;
+
 module m3_tap(){
     // an m3 tapped hole
     circle(d=2.8);
+}
+module m3_clearance(){
+    // an m3 clearance hole
+    circle(d=3.5);
 }
 
 module top_plate(){
@@ -50,9 +56,11 @@ module bottom_plate(){
         }
 
         // mounting screws
-        bottom_mounting_screw_frame() m3_tap();
-
-        reflect([1,0]) reflect([0,1]) translate(plate_dimensions/2 - [1,1]*plate_support_inset) circle(d=3.1);
+        bottom_mounting_screw_frame(outer=true, inner=false) m3_tap();
+        bottom_mounting_screw_frame(outer=false, inner=true) m3_clearance();
+        bottom_mounting_screw_frame(outer=true, inner=false) translate([10,0]) circle(d=10);
+    
+        reflect([1,0]) reflect([0,1]) translate(plate_dimensions/2 - [1,1]*plate_support_inset) m3_clearance();
 
         // objective
         hull(){
