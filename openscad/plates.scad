@@ -18,11 +18,20 @@ $fn=64;
 
 module m3_tap(){
     // an m3 tapped hole
-    circle(d=2.8);
+    circle(d=2.4);
 }
 module m3_clearance(){
     // an m3 clearance hole
-    circle(d=3.5);
+    circle(d=3.0);
+}
+
+moudle m2_5_tap(){
+    // an m2.5 tapped hole
+    circle(d=1.9);
+}
+
+module pi_mounting(){
+    // TODO: proper mounting holes for Raspberry Pi
 }
 
 module top_plate(){
