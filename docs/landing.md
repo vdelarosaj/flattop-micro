@@ -12,6 +12,7 @@ The assembly is detailed in the steps below:
 * [Assemble the focus mechanism](2_assemble_focus_mechanism.md){step: True}
 * [Attach parts to the top plate](3_attach_parts_to_the_top_plate.md){step: True}
 * [Attach the bottom plate](4_attach_bottom_plate.md){step: True}
+* [Attach the optics and other parts](5_attach_components.md){step: True}
 
 
 [OpenFlexure Microscope]: https://openflexure.org/projects/microscope/
