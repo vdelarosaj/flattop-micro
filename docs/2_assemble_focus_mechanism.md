@@ -61,13 +61,4 @@ Gently pull the [band insertion tool] out of the [foot].  The band should pull t
 
 Well done, you have now assembled the focusing mechanism.
 
-### 
-![](images/)
-### 
-![](images/)
-### 
-![](images/)
-### 
-![](images/)
-
 [openflexure block stage]: https://openflexure.org/projects/blockstage/

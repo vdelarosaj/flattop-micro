@@ -10,6 +10,8 @@ The assembly is detailed in the steps below:
 * [Bill of materials]({{BOMlink}})
 * [Prepare the laser cut plates](1_preparing_laser_cut_parts.md){step: True}
 * [Assemble the focus mechanism](2_assemble_focus_mechanism.md){step: True}
+* [Attach parts to the top plate](3_attach_parts_to_the_top_plate.md){step: True}
+* [Attach the bottom plate](4_attach_bottom_plate.md){step: True}
 
 
 [OpenFlexure Microscope]: https://openflexure.org/projects/microscope/
