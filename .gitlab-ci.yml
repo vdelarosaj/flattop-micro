@@ -1,5 +1,5 @@
 stages:
-   - build
+    - build
     - deploy
 
 # Build STL files
@@ -42,7 +42,7 @@ pages:
 
     script:
       - cd docs
-     - cp -r ../builds models
+      - cp -r ../builds models
       - gitbuilding build
       - gitbuilding build-html
       - cd ..
