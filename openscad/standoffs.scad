@@ -29,5 +29,5 @@ module post_with_holes(h, r2=plate_support_r){
     }
 }
 
-post_with_holes(60);
+post_with_holes(plate_separation);
 translate([2.5*plate_support_r,0,0]) post_with_holes(30,5);

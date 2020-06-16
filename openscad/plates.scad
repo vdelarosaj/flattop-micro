@@ -25,14 +25,15 @@ module m3_clearance(){
     circle(d=3.0);
 }
 
-moudle m2_5_tap(){
+module m2_5_tap(){
     // an m2.5 tapped hole
     circle(d=1.9);
 }
 
-module pi_mounting(){
+//module pi_mounting(){
     // TODO: proper mounting holes for Raspberry Pi
-}
+//}
+
 
 module top_plate(){
     // The plate at the top of the microscope - the sample goes here
