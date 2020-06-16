@@ -1,6 +1,6 @@
 #!/bin/bash
 
-build_dir=./build
+build_dir=./builds
 
 mkdir -p $build_dir
 openscad -o $build_dir/focusing_assembly.stl openscad/focusing_assembly.scad
