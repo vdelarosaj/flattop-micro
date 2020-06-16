@@ -34,7 +34,7 @@ CustomCategories:
 #Title: 'My project'
 
 #Uncomment below to set a custom Website root for static HTML builds
-#WebsiteRoot: '/path/'
+WebsiteRoot: '/openflexure-flat-top-microscope/'
 
 #Uncomment below to disable fussy warnings
 #Fussy: False
