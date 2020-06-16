@@ -11,3 +11,24 @@ You can view the [assembly instructions] in the [docs] folder.  In due course th
 
 [assembly instructions]: docs/landing.md
 [docs]: docs/
+
+## Compiling and contributing
+### Cloning the project
+The project consists of a number of interconnected [OpenSCAD] files.  In order to compile these into printable STL files, you need the whole folder, including the OpenFlexure Microscope files (because we pull in quite a lot of bits from there).  The easiest way to do this is to clone the git repository:
+```
+git clone --recurse-submodules https://gitlab.com/rwb27/openflexure-flat-top-microscope.git
+```
+NB the ``--recurse-submodules`` is important because it will pull in the openflexure microscope files - there's more information in Git's [submodules] documentation if you are curious.
+
+### Building with a build script
+If you use Linux, including "Windows Subsystem Linux", you can build the project by running ``build.sh`` which will automatically compile the SCAD files into STLs (for the printed parts) and a DXF file (for the plates).
+
+### Building in OpenSCAD
+Alternatively, you can just open the SCAD files directly in OpenSCAD, and compile STL or other files from there.
+
+### Working on the documentation
+The documentation contains a lot of images, which don't work nicely in ``git``.  We use "Large File Storage" to manage the images - you can set this up by following Github's [guide to LFS].  If it's already on your system, you can just run ``git lfs install`` to enable it for the repository.
+
+[OpenSCAD]: https://openscad.org/
+[submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[guide to LFS]: https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage

@@ -2,6 +2,9 @@ stages:
     - build
     - deploy
 
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+
 # Build STL files
 build:
     stage: build
@@ -18,8 +21,6 @@ build:
     script:
       # Build STL files with OpenSCAD
       - mkdir -p /root/.local/share
-      - git submodule init # The microscope needs submodules enabled
-      - git submodule update
       - bash ./build.sh
 
     artifacts:
