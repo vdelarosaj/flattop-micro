@@ -1,0 +1,55 @@
+stages:
+#    - build
+    - deploy
+
+# Build STL files
+# build:
+#     stage: build
+#     image: ubuntu:18.04
+
+#     before_script:
+#       - apt-get update -qq
+#       - apt-get -y -qq install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates python3-pip
+#       - add-apt-repository -y ppa:openscad/releases
+#       - apt-get update -qq
+#       - apt-get install -y -qq openscad
+#       # - pip3 install -r requirements.txt
+
+#     script:
+#       # Build STL files with OpenSCAD
+#       - mkdir -p /root/.local/share
+#       - ./build.sh
+
+#     artifacts:
+#       expire_in: 1 week
+#       name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
+#       paths:
+#         - builds/*.stl
+
+#     only:
+#       - master
+#       - merge_requests
+
+pages:
+    dependencies:
+      - build
+    stage: deploy
+    image: "python:3.7"
+
+    before_script:
+      - python --version
+      - pip install gitbuilding
+
+    script:
+      - cd docs
+#      - cp -r ../builds models
+      - gitbuilding build
+      - gitbuilding build-html
+      - cd ..
+      - mv docs/_site public
+
+    artifacts:
+        paths:
+        - public
+    only:
+    - master
