@@ -30,9 +30,6 @@ build_cad:
         - builds/*.stl
         - builds/*.dxf
 
-    only:
-      - master
-      - merge_requests
 
 pages:
     dependencies:
