@@ -6,7 +6,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: normal
 
 # Build STL files
-build:
+build_stl:
     stage: build
     image: ubuntu:18.04
 
@@ -51,6 +51,7 @@ pages:
       - gitbuilding build-html
       - cd ..
       - mv docs/_site public
+      - mv builds/ public/cad/
 
     artifacts:
         paths:
