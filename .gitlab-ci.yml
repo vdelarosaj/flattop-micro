@@ -6,7 +6,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: normal
 
 # Build STL files
-build_stl:
+build_cad:
     stage: build
     image: ubuntu:18.04
 
@@ -36,7 +36,7 @@ build_stl:
 
 pages:
     dependencies:
-      - build
+      - build_cad
     stage: deploy
     image: "python:3.7"
 
