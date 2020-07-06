@@ -2,7 +2,7 @@
 
 This part provides a mount for the OpenFlexure Microscope optics module, that allows you to focus it but not move in X or Y.
 
-It's (c) Richard Bowman 2020, released under CERN Open Hardware License v2.
+It's (c) Richard Bowman 2020, released under CERN Open Hardware License (Strongly reciprocal) v2.
 
 */
 
