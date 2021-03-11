@@ -7,10 +7,13 @@ A number of people have asked whether we could look at larger objects, ranging f
 Currently there's no illumination - though it should in principle not be that hard to add an illuminator of some sort.
 
 ## Assembly instructions
-You can view the [assembly instructions] in the [docs] folder.  In due course these will be compiled into a nice web page, but for now you can look at the markdown files directly on gitlab.
+You can view the [assembly instructions] online, generated from the source files in the [docs] folder.
 
-[assembly instructions]: docs/landing.md
+[assembly instructions]: https://rwb27.gitlab.io/openflexure-flat-top-microscope/
 [docs]: docs/
+
+## STL files
+The STL files are built automatically but are not currently distributed very well!  A snapshot is available in the [CI artefacts](https://gitlab.com/rwb27/openflexure-flat-top-microscope/-/jobs/1090433254/artifacts/browse).
 
 ## Compiling and contributing
 ### Cloning the project
